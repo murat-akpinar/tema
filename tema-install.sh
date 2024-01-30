@@ -36,6 +36,7 @@ echo "8. Rounded Window Corners"
 echo "9. Rounded Corners"
 echo "10. User Themes" 
 echo "11. Resource Monito"
+echo "12. Clipboard Indicator"
 
 echo "dconf load /org/gnome/shell/extensions/ < gnome-extensions-settings.conf"
 echo "Bu komutu her şey yaptıktan sonra çalıştır"
