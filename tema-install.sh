@@ -1,35 +1,28 @@
 #!/bin/bash
 
-DOWNLOAD=~/Download/tema
-SHARE_THEME=/usr/share/themes/Dracula
-HOME_THEME=~/.themes/Dracula
-SHARE_ICON=/usr/share/icons/
-HOME_ICON=~/.icons/
-
-
 sudo mkdir /usr/share/themes/Dracula
 sudo mkdir ~/.themes/Dracula
 
 #### Font yükleme
-cd $DOWNLOAD
+cd ~/Download/tema
 
 git clone https://github.com/murat-akpinar/dotfile.git
 
 
 
 git clone https://github.com/dracula/gtk/files/5214870/Dracula.zip
-unzip ~/Downloads/tema/Dracula.zip -d $DOWNLOAD
+unzip ~/Downloads/tema/Dracula.zip -d ~/Download/tema
 ### Dracula tema indirme
 
 git clone https://github.com/dracula/gtk.git
-unzip ~/Downloads/tema/gtk-master.zip -d $DOWNLOAD
+unzip ~/Downloads/tema/gtk-master.zip -d ~/Download/tema
 
 ### Gerekli Dosyaları Taşıma
-cp ~/Downloads/tema/Dracula/ $SHARE_ICON
-cp ~/Downloads/tema/Dracula/ $HOME_ICON
+cp ~/Downloads/tema/Dracula/ /usr/share/icons/
+cp ~/Downloads/tema/Dracula/ /.icons/
 
-cp ~/Downloads/tema/gtk/* $SHARE_THEME
-cp ~/Downloads/tema/gtk/* $HOME_THEME
+cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
+cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
 
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 
@@ -40,8 +33,8 @@ gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 
-bash $DOWNLOAD/dotfile/setup.sh
-bash $DOWNLOAD/dotfile/alias.sh
+bash ~/Download/tema/dotfile/setup.sh
+bash ~/Download/tema/dotfile/alias.sh
 
 
 echo "Gnome Extension list"
