@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo mkdir /usr/share/themes/Dracula
-sudo mkdir ~/.themes/Dracula
+sudo mkdir -p /usr/share/themes/Dracula
+sudo mkdir -p ~/.themes/Dracula
 
 #### Font yükleme
 
