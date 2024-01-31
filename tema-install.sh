@@ -7,18 +7,18 @@ sudo mkdir -p ~/.themes/Dracula
 
 
 wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
-unzip ~/Downloads/tema/Dracula.zip -d ~/Download/tema
+unzip ~/Downloads/tema/Dracula.zip -d ~/Downloads/tema
 ### Dracula tema indirme
 
 git clone https://github.com/dracula/gtk.git
-unzip ~/Downloads/tema/gtk-master.zip -d ~/Download/tema
+unzip ~/Downloads/tema/gtk-master.zip -d ~/Downloads/tema
 
 ### Gerekli Dosyaları Taşıma
-cp ~/Downloads/tema/Dracula/ /usr/share/icons/
-cp ~/Downloads/tema/Dracula/ /.icons/
+sudo cp -r ~/Downloads/tema/Dracula/ /usr/share/icons/
+sudo cp -r ~/Downloads/tema/Dracula/ /.icons/
 
-cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
-cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
+sudo cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
+sudo cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
 
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 
