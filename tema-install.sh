@@ -4,10 +4,6 @@ sudo mkdir /usr/share/themes/Dracula
 sudo mkdir ~/.themes/Dracula
 
 #### Font yükleme
-cd ~/Download/tema
-
-git clone https://github.com/murat-akpinar/dotfile.git
-
 
 
 wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
@@ -32,7 +28,7 @@ gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
-
+git clone https://github.com/murat-akpinar/dotfile.git
 bash ~/Download/tema/dotfile/setup.sh
 bash ~/Download/tema/dotfile/alias.sh
 
