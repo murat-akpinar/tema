@@ -1,27 +1,29 @@
 #!/bin/bash
 
-echo "Lütfen https://www.pling.com/p/1939902/ bu dosyaları indirin"
+DOWNLOAD=~/Download/tema
+SHARE_THEME=/usr/share/themes/Dracula
+HOME_THEME=~/.themes/Dracula
 
-echo "Video Link : https://www.youtube.com/watch?v=7JJmCAJs9pM"
+sudo mkdir /usr/share/themes/Dracula
+sudo mkdir ~/.themes/Dracula
 
-
-
-cd ~/Download/tema
-sudo mkdir /usr/share/themes/
-sudo mkdir ~/.themes/
 #### Font yükleme
-
+cd $DOWNLOAD
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
 sudo bash Tela-circle-icon-theme/install.sh -n dracula
 
+### Dracula tema indirme
 
 git clone https://github.com/dracula/gtk.git
+unzip ~/Downloads/tema/gtk-master.zip -d $DOWNLOAD
 
-unzip ~/Downloads/tema/gtk-master.zip -d ~/.themes/
-unzip ~/Downloads/tema/gtk-master.zip -d /usr/share/themes/
-
+### Gerekli Dosyaları Taşıma
+mv ~/Downloads/tema/gtk-master/* /usr/share/themes/Dracula
+mv ~/Downloads/tema/gtk-master/* ~/.themes/Dracula
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 
+
+### Temaları Geçerli yapma
 gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
@@ -33,11 +35,10 @@ echo "2. Aylur's Widgets"
 echo "3. Blur My Shell"
 echo "4. Coverflow Alt-Tab"
 echo "5. Dash To Dock"
-echo "6. GSConnect"
-echo "7. Just Prefection"
-echo "8. Rounded Window Corners"
-echo "9. Rounded Corners"
-echo "10. User Themes" 
-echo "11. Resource Monito"
-echo "12. Clipboard Indicator"
+echo "6. Just Prefection"
+echo "7. Rounded Window Corners"
+echo "8. Rounded Corners"
+echo "9. User Themes" 
+echo "10. Resource Monito"
+echo "11. Clipboard Indicator"
 
