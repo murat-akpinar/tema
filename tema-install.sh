@@ -31,6 +31,11 @@ git clone https://github.com/murat-akpinar/dotfile.git
 bash ~/Downloads/tema/dotfile/setup.sh
 bash ~/Downloads/tema/dotfile/alias.sh
 
+cp -r ~/Downloads/tema/dotfile/mytheme.omp.json ~/.poshthemes
+
+source ~/.bash_profile
+source ~/.bashrc
+source ~/.profile
 
 echo "Gnome Extension list"
 echo "1. Applndicator and KSatusNotifierItem Sport"
