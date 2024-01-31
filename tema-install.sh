@@ -3,23 +3,29 @@
 DOWNLOAD=~/Download/tema
 SHARE_THEME=/usr/share/themes/Dracula
 HOME_THEME=~/.themes/Dracula
+SHARE_ICON=/usr/share/icons/
+HOME_ICON=~/.icons/
+
 
 sudo mkdir /usr/share/themes/Dracula
 sudo mkdir ~/.themes/Dracula
 
 #### Font yükleme
 cd $DOWNLOAD
-git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
-sudo bash Tela-circle-icon-theme/install.sh -n dracula
-
+git clone https://github.com/dracula/gtk/files/5214870/Dracula.zip
+unzip ~/Downloads/tema/Dracula.zip -d $DOWNLOAD
 ### Dracula tema indirme
 
 git clone https://github.com/dracula/gtk.git
 unzip ~/Downloads/tema/gtk-master.zip -d $DOWNLOAD
 
 ### Gerekli Dosyaları Taşıma
-mv ~/Downloads/tema/gtk-master/* /usr/share/themes/Dracula
-mv ~/Downloads/tema/gtk-master/* ~/.themes/Dracula
+cp ~/Downloads/tema/Dracula/ $SHARE_ICON
+cp ~/Downloads/tema/Dracula/ $HOME_ICON
+
+cp ~/Downloads/tema/gtk/* $SHARE_THEME
+cp ~/Downloads/tema/gtk/* $HOME_THEME
+
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 
 
