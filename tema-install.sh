@@ -17,8 +17,8 @@ unzip ~/Downloads/tema/gtk-master.zip -d ~/Downloads/tema
 sudo cp -r ~/Downloads/tema/Dracula/ /usr/share/icons/
 sudo cp -r ~/Downloads/tema/Dracula/ /.icons/
 
-sudo cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
-sudo cp ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
+sudo cp -r ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
+sudo cp -r ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
 
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 
