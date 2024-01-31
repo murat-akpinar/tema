@@ -7,21 +7,24 @@ echo "Video Link : https://www.youtube.com/watch?v=7JJmCAJs9pM"
 
 
 cd ~/Download/tema
+sudo mkdir /usr/share/themes/
+sudo mkdir ~/.themes/
+#### Font yükleme
 
-git clone https://github.com/vinceliuice/Orchis-theme.git
-bash Orchis-theme/install.sh
-bash Orchis-theme/install.sh -l
-
-
-git clone https://github.com/TaylanTatli/Sevi.git
-bash ~/Downloads/tema/Sevi/install.sh
-bash ~/Downloads/tema/Sevi/install.sh -a
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
+sudo bash Tela-circle-icon-theme/install.sh -n dracula
 
 
-unzip ~/Downloads/tema/Orchis-Shell-MOD.zip -d ~/.themes/
-unzip ~/Downloads/tema/fonts.zip -d ~/.local/share/
+git clone https://github.com/dracula/gtk.git
+
+unzip ~/Downloads/tema/gtk-master.zip -d ~/.themes/
+unzip ~/Downloads/tema/gtk-master.zip -d /usr/share/themes/
 
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
+
+gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 
 echo "Gnome Extension list"
@@ -38,5 +41,3 @@ echo "10. User Themes"
 echo "11. Resource Monito"
 echo "12. Clipboard Indicator"
 
-echo "dconf load /org/gnome/shell/extensions/ < gnome-extensions-settings.conf"
-echo "Bu komutu her şey yaptıktan sonra çalıştır"
