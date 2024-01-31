@@ -10,7 +10,7 @@ git clone https://github.com/murat-akpinar/dotfile.git
 
 
 
-git clone https://github.com/dracula/gtk/files/5214870/Dracula.zip
+wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 unzip ~/Downloads/tema/Dracula.zip -d ~/Download/tema
 ### Dracula tema indirme
 
