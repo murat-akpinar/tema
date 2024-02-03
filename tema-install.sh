@@ -3,39 +3,38 @@
 sudo mkdir -p /usr/share/themes/Dracula
 sudo mkdir -p ~/.themes/Dracula
 
-#### Font yükleme
-
+### Temalar İndiriliyor ####
 git clone https://github.com/murat-akpinar/dotfile.git
-git clone https://github.com/vinceliuice/Tela-icon-theme.git
-
-bash Tela-icon-theme/install.sh -n dracula
-### Dracula tema indirme
-
 git clone https://github.com/dracula/gtk.git
+git clone https://github.com/yeyushengfan258/Reversal-icon-theme.git
+### Temalar İndiriliyor ####
+
+### Reversal-icon-theme ###
+bash ~/Downloads/tema/Reversal-icon-theme/install.sh -purple
+### Reversal-icon-theme ###
+
+### Dracula Tema ###
 unzip ~/Downloads/tema/gtk-master.zip -d ~/Downloads/tema
-
-### Gerekli Dosyaları Taşıma
-
-sudo cp -r ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
 sudo cp -r ~/Downloads/tema/gtk/* /usr/share/themes/Dracula
 
-mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
-
-
-### Temaları Geçerli yapma
 gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
-gsettings set org.gnome.desktop.interface icon-theme "Tela-dark"
+### Dracula Tema ###
 
-git clone https://github.com/murat-akpinar/dotfile.git
+### Wallpaper ###
+mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
+### Wallpaper ###
+
+### Dotfile ###
 bash ~/Downloads/tema/dotfile/setup.sh
-bash ~/Downloads/tema/dotfile/alias.sh
-
 cp -r ~/Downloads/tema/dotfile/mytheme.omp.json ~/.poshthemes
 
 source ~/.bash_profile
 source ~/.bashrc
 source ~/.profile
+
+bash ~/Downloads/tema/dotfile/alias.sh
+### Dotfile ###
 
 echo "Gnome Extension list"
 echo "1. Applndicator and KSatusNotifierItem Sport"
