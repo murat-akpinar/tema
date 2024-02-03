@@ -25,7 +25,7 @@ mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 ### Temaları Geçerli yapma
 gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
-gsettings set org.gnome.desktop.interface icon-theme "Dracula-dark"
+gsettings set org.gnome.desktop.interface icon-theme "Tela-dark"
 
 git clone https://github.com/murat-akpinar/dotfile.git
 bash ~/Downloads/tema/dotfile/setup.sh
