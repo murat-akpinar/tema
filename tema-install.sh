@@ -49,4 +49,10 @@ echo "8. Rounded Corners"
 echo "9. User Themes" 
 echo "10. Resource Monito"
 echo "11. Clipboard Indicator"
+echo "###3"
+
+echo "source ~/.profile"
+echo "source ~/.bash_profile"
+echo "Bu komutları çalıştırın"
+
 
