@@ -9,6 +9,7 @@ git clone https://github.com/murat-akpinar/dotfile.git
 git clone https://github.com/dracula/gtk.git
 git clone https://github.com/yeyushengfan258/Reversal-icon-theme.git
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/UbuntuMono.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Ubuntu.zip
 ### Temalar İndiriliyor ####
 cd ~/Downloads/tema
 ### Reversal-icon-theme ###
@@ -26,6 +27,7 @@ gsettings set org.gnome.desktop.interface icon-theme 'Reversal-purple-dark'
 
 ### Font ###
 sudo unzip ~/Downloads/tema/UbuntuMono.zip -d /usr/share/fonts/Ubuntu
+sudo unzip ~/Downloads/tema/Ubuntu.zip -d /usr/share/fonts/Ubuntu
 ### Font ###
 
 ### Wallpaper ###
