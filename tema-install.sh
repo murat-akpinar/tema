@@ -29,12 +29,16 @@ mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 ### Dotfile ###
 bash ~/Downloads/tema/dotfile/setup.sh
 cp -r ~/Downloads/tema/dotfile/mytheme.omp.json ~/.poshthemes
+bash ~/Downloads/tema/dotfile/alias.sh
+
+
+
 
 source ~/.bash_profile
 source ~/.bashrc
 source ~/.profile
 
-bash ~/Downloads/tema/dotfile/alias.sh
+
 ### Dotfile ###
 
 echo "Gnome Extension list"
