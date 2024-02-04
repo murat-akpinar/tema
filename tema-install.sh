@@ -2,6 +2,7 @@
 
 sudo mkdir -p /usr/share/themes/Dracula
 sudo mkdir -p ~/.themes/Dracula
+sudo mkdir -p /usr/share/fonts/Ubuntu
 cd ~/Downloads
 ### Temalar İndiriliyor ####
 git clone https://github.com/murat-akpinar/dotfile.git
@@ -22,6 +23,10 @@ gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.desktop.interface icon-theme 'Reversal-purple-dark'
 ### Dracula Tema ###
+
+### Font ###
+sudo unzip ~/Downloads/tema/UbuntuMono.zip -d /usr/share/fonts/Ubuntu
+### Font ###
 
 ### Wallpaper ###
 mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
