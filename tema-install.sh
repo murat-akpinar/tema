@@ -2,7 +2,7 @@
 
 sudo mkdir -p /usr/share/themes/Dracula
 sudo mkdir -p ~/.themes/Dracula
-
+cd ~/Downloads
 ### Temalar İndiriliyor ####
 git clone https://github.com/murat-akpinar/dotfile.git
 git clone https://github.com/dracula/gtk.git
