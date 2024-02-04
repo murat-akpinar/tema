@@ -8,7 +8,7 @@ git clone https://github.com/murat-akpinar/dotfile.git
 git clone https://github.com/dracula/gtk.git
 git clone https://github.com/yeyushengfan258/Reversal-icon-theme.git
 ### Temalar İndiriliyor ####
-
+cd ~/Downloads/tema
 ### Reversal-icon-theme ###
 bash ~/Downloads/tema/Reversal-icon-theme/install.sh -purple
 ### Reversal-icon-theme ###
