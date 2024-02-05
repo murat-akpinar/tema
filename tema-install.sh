@@ -5,7 +5,6 @@ sudo mkdir -p ~/.themes/Dracula
 sudo mkdir -p /usr/share/fonts/Ubuntu
 cd ~/Downloads
 ### Temalar İndiriliyor ####
-git clone https://github.com/murat-akpinar/dotfile.git
 git clone https://github.com/dracula/gtk.git
 git clone https://github.com/yeyushengfan258/Reversal-icon-theme.git
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/UbuntuMono.zip
