@@ -43,29 +43,23 @@ bash ~/Downloads/tema/dotfile/alias.sh
 
 
 
-source ~/.bash_profile
 source ~/.bashrc
-source ~/.profile
 
 
 ### Dotfile ###
 
 echo "Gnome Extension list"
-echo "1. Applndicator and KSatusNotifierItem Sport"
-echo "2. Aylur's Widgets"
-echo "3. Blur My Shell"
-echo "4. Coverflow Alt-Tab"
-echo "5. Dash To Dock"
-echo "6. Just Prefection"
-echo "7. Rounded Window Corners"
-echo "8. Rounded Corners"
-echo "9. User Themes" 
-echo "10. Resource Monito"
-echo "11. Clipboard Indicator"
+
+echo "1. Blur My Shell"
+echo "2. Dash To Dock"
+echo "3. Just Prefection"
+echo "4. Rounded Corners"
+echo "5. User Themes" 
+echo "6. Resource Monito"
+echo "7. Clipboard Indicator"
 echo "###3"
 
-echo "source ~/.profile"
-echo "source ~/.bash_profile"
+echo "source ~/.bashrc"
 echo "Bu komutları çalıştırın"
 
 
