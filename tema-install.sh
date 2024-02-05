@@ -35,19 +35,9 @@ mv ~/Downloads/tema/backgrounds/* ~/.local/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri-dark file:///home/$USER/.local/share/backgrounds/samurai.jpg
 ### Wallpaper ###
 
-### Dotfile ###
-bash ~/Downloads/tema/dotfile/setup.sh
-cp -r ~/Downloads/tema/dotfile/mytheme.omp.json ~/.poshthemes
-bash ~/Downloads/tema/dotfile/alias.sh
-
-
-
-
-source ~/.bashrc
-
 
 ### Dotfile ###
-
+echo "Gnome Tweak Kurmayı Unutma"
 echo "Gnome Extension list"
 
 echo "1. Blur My Shell"
@@ -59,7 +49,5 @@ echo "6. Resource Monito"
 echo "7. Clipboard Indicator"
 echo "###3"
 
-echo "source ~/.bashrc"
-echo "Bu komutları çalıştırın"
 
 
